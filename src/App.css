@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+:root {
+  --bs-navbar-bg: #c7c6b4; /* Change this to your desired background color */
+  --bs-navbar-color: #ffffff; /* Change this to your desired text color */
+  --bs-navbar-hover-color: #cccccc; /* Change this to your desired hover text color */
+  --site-bg-color: #ffffff;
+  --card-bg-color: #f3f2ef;
+  --site-font-family: 'Domine';
+}
+
+#root {
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--site-bg-color);
+  font-family: var(--site-font-family);
+}
+
+.bg-custom {
+  background-color: var(--bs-navbar-bg) !important;
+}
+
+.navbar{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--bs-navbar-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--bs-navbar-hover-color) !important;
+}
+
+.custom-card {
+  background-color: var(--card-bg-color) !important;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.favicon {
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+
